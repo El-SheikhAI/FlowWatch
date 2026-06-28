@@ -1,0 +1,16 @@
+services:
+  app:
+    build: .
+    volumes:
+      - flowwatch_data:/app/data
+    restart: unless-stopped
+    network_mode: host
+
+  tunnel:
+    image: cloudflare/cloudflared:latest
+    command: tunnel --no-autoupdate run --token ${CF_TUNNEL_TOKEN}
+    restart: unless-stopped
+    network_mode: host
+
+volumes:
+  flowwatch_data:
