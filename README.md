@@ -136,6 +136,11 @@ Clients see at `/:slug?token=READ_TOKEN`:
 | **30-day uptime** | Colored bars: green (success), red (failed), gray (no data) |
 | **Recent runs** | Last 10 runs across all workflows with timestamp |
 
+<p align="center">
+  <img src="https://i.ibb.co/5gXWFZyS/Geist.png" alt="Client status page - dark mode" width="48%" />
+  <img src="https://i.ibb.co/XfgkC5K1/Geist-1.png" alt="Client status page - light mode" width="48%" />
+</p>
+
 <br />
 
 ## Development
