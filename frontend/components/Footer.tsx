@@ -3,12 +3,12 @@ export default function Footer() {
     <div className="footer">
       <div className="footer-brand">
         Powered by{" "}
-        <a href="https://github.com/nodatx/flowwatch" target="_blank" rel="noopener">
+        <a href="https://github.com/El-SheikhAI/FlowWatch" target="_blank" rel="noopener">
           FlowWatch
         </a>{" "}
         — open source by{" "}
-        <a href="https://nodatx.com" target="_blank" rel="noopener">
-          Nodatx
+        <a href="https://github.com/El-SheikhAI" target="_blank" rel="noopener">
+          El-SheikhAI
         </a>
       </div>
     </div>

@@ -26,12 +26,28 @@ FlowWatch sits next to n8n. Each workflow pings it on success or failure. Your c
 ## Quick Start
 
 ```bash
-git clone https://github.com/nodatx/flowwatch.git
-cd flowwatch
+git clone https://github.com/El-SheikhAI/FlowWatch.git
+cd FlowWatch
 docker compose up -d
 ```
 
 Open `http://localhost:3000`. Create your admin account on the first visit.
+
+### Expose with Cloudflare Tunnel (optional)
+
+Create a `.env` file next to `docker-compose.yml`:
+
+```bash
+cp .env.example .env
+```
+
+Then edit `.env` and paste your Cloudflare tunnel token:
+
+```
+CF_TUNNEL_TOKEN=eyJhIjoi...
+```
+
+Create a tunnel at [Cloudflare Zero Trust](https://one.dash.cloudflare.com) → Networks → Tunnels. Copy the token, paste it, then `docker compose up -d` again. Add a public hostname pointing to `127.0.0.1:3000`.
 
 <br />
 
@@ -172,4 +188,4 @@ For commercial licensing inquiries: contact@nodatx.com
 
 ---
 
-<p align="center">Built by <a href="https://nodatx.com">Nodatx</a> — n8n automation agency</p>
+<p align="center">Built by <a href="https://github.com/El-SheikhAI">El-SheikhAI</a> · <a href="https://nodatx.com">Nodatx</a> · <a href="mailto:mostafa@nodatx.com">mostafa@nodatx.com</a></p>
